@@ -1,0 +1,23 @@
+{
+  "name": "Salvador Loterias",
+  "short_name": "Salvador",
+  "description": "A Banca de Apostas Mais Confiável e Rentável - Salvador Loterias",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "https://trivo-assets.pages.dev/images/paraiso2.webp",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://trivo-assets.pages.dev/images/paraiso2.webp",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
