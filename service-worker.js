@@ -1,13 +1,19 @@
-self.addEventListener("install", event => {
-  console.log("[SW] Instalado");
-  event.waitUntil(self.skipWaiting());
+self.addEventListener('install', function (event) {
+  event.waitUntil(
+    caches.open('acertos-cache').then(function (cache) {
+      return cache.addAll([
+        '/',
+        '/index.html',
+        '/manifest.json',
+        '/icon-192.png',
+        '/icon-512.png'
+      ]);
+    })
+  );
 });
 
-self.addEventListener("activate", event => {
-  console.log("[SW] Ativado");
-  event.waitUntil(self.clients.claim());
-});
-
-self.addEventListener("fetch", event => {
-  event.respondWith(fetch(event.request));
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    fetch(event.request).catch(() => caches.match(event.request))
+  );
 });
