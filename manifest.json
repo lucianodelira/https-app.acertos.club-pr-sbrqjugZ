@@ -1,7 +1,7 @@
 {
   "name": "Acertos Club",
   "short_name": "Acertos",
-  "start_url": "https://app.acertos.club/pr/sbrqjugZ",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
