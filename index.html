@@ -7,17 +7,28 @@
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#000000" />
     <link rel="icon" href="icon-192.png" />
-    <script>
-      location.href = "https://app.acertos.club/pr/sbrqjugZ";
-    </script>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #000;
+      }
+
+      iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
   <body>
-    <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js');
-  }
-</script>
+    <iframe src="https://app.acertos.club/pr/sbrqjugZ" title="Acertos Club"></iframe>
 
-    Redirecionando para Acertos Club...
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js');
+      }
+    </script>
   </body>
 </html>
